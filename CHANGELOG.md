@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/compare/v1.0.0...v1.0.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* process both update and delete. revert test ([acb580f](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/commit/acb580f2976f13c5dcbaa42f9fe4a5ac928d5178))
+* set header before send. Update test ([893c869](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/commit/893c8693d9fd75cb3ba18abdfe3e90536736ff55))
+
 ## 1.0.0 (2024-01-08)
 
 
