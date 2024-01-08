@@ -13,10 +13,10 @@ interface Input<T = any> {
 
 export default async function (input: Input) {
   console.info(`Received event ${input.eventId}, with payload ${JSON.stringify(input.payload)} and valid time ${input.validTime}`);
-  console.info(`The event type is ${input.eventType} and the contact has contactid=${contactid}`);
+  console.info(`The event type is ${input.eventType} and the contact has contactid=${input.payload.contactid}`);
   if (input.eventType === "delete") {
     return {
-      contactid: input.contactid
+      contactid: input.payload.contactid
     };
   }
   return {
