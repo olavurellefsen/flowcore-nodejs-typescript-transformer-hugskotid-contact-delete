@@ -1,24 +1,18 @@
 [
   {
     "input": {
-      "hello": "world",
-      "bar": "baz"
+      "contactid": "123"
     },
     "output": {
-      "eventid": ":uuid:",
-      "validtime": ":date:",
-      "hello": "world",
-      "bar": "baz"
+      "contactid": "123"
     }
   },
   {
     "input": {
-      "foo": "bar"
+      "contactid": "456"
     },
     "output": {
-      "eventid": ":uuid:",
-      "validtime": ":date:",
-      "foo": "bar"
+      "contactid": "456"
     }
   }
 ]
