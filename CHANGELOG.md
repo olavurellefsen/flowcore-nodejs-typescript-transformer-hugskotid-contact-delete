@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/compare/v1.0.1...v1.0.2) (2024-01-08)
+
+
+### Bug Fixes
+
+* get contactid from payload ([bda802b](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/commit/bda802b5a8dd9f5ad7592dee72ee270570174c4a))
+
 ## [1.0.1](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/compare/v1.0.0...v1.0.1) (2024-01-08)
 
 
