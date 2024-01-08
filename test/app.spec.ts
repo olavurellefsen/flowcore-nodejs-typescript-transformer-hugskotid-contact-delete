@@ -26,7 +26,7 @@ describe("NodeJS Test Transformer (e2e)", () => {
   beforeAll(async () => {
     app.use(express.json());
 
-    app.post("/store/:name", (req, res) => {
+    app.post("/delete/:name", (req, res) => {
       console.log("Received payload", req.params.name, req.body);
       listeners.get(req.params.name)!(req.body);
       res.status(201).send();
@@ -88,7 +88,7 @@ describe("NodeJS Test Transformer (e2e)", () => {
       };
 
       const processedResult = await axios.post(
-        "http://localhost:3001/transform",
+        "http://localhost:3001/delete",
         data,
       );
 
