@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2024-01-08)
+
+
+### Features
+
+* delete the record with contactid ([97c2541](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/commit/97c25414a54d0ff79404196f4c8af63791873efe))
+
+
+### Bug Fixes
+
+* update tests to reflect delete operation ([3a31377](https://github.com/olavurellefsen/flowcore-nodejs-typescript-transformer-hugskotid-contact-delete/commit/3a31377d2c00336ea944c0afdb4df59996da69ae))
+
 ## [2.0.0](https://github.com/flowcore-io/nodejs-typescript-transformer-example/compare/v1.3.1...v2.0.0) (2023-10-24)
 
 
