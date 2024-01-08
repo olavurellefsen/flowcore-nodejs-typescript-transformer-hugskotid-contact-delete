@@ -16,13 +16,21 @@ app.get("/health", async (req: Request, res: Response): Promise<Response> => {
 });
 
 app.post("/transform", async (req: Request, res: Response): Promise<Response> => {
-  const { eventId, validTime, payload } = req.body;
-  // Delete the record
-  return res.set({
-    "x-flowcore-delete-data": "true"
-  }).send(await transform({
+  const { eventId, validTime, payload, eventType } = req.body;
+  if (eventType === "delete") {
+    return res.set({
+      "x-flowcore-delete-data": "true"
+    }).send(await transform({
+      eventId,
+      validTime,
+      eventType,
+      payload,
+    }));
+  }
+  return res.send(await transform({
     eventId,
     validTime,
+    eventType,
     payload,
   }));
 });

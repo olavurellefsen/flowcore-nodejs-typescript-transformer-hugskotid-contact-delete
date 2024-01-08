@@ -7,12 +7,21 @@
 interface Input<T = any> {
   eventId: string;
   validTime: string;
+  eventType: string;
   payload: T;
 }
 
 export default async function (input: Input) {
   console.info(`Received event ${input.eventId}, with payload ${JSON.stringify(input.payload)} and valid time ${input.validTime}`);
+  console.info(`The event type is ${input.eventType} and the contact has contactid=${contactid}`);
+  if (input.eventType === "delete") {
+    return {
+      contactid: input.contactid
+    };
+  }
   return {
-    contactid: input.contactid
+    eventId: input.eventId,
+    validtime: input.validTime,
+    ...input.payload,
   };
 }
